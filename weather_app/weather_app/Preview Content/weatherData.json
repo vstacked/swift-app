@@ -1,0 +1,47 @@
+{
+  "coord": {
+    "lon": 110.8317,
+    "lat": -7.5561
+  },
+  "weather": [
+    {
+      "id": 501,
+      "main": "Rain",
+      "description": "moderate rain",
+      "icon": "10n"
+    }
+  ],
+  "base": "stations",
+  "main": {
+    "temp": 25.68,
+    "feels_like": 26.68,
+    "temp_min": 25.68,
+    "temp_max": 25.68,
+    "pressure": 1009,
+    "humidity": 91,
+    "sea_level": 1009,
+    "grnd_level": 998
+  },
+  "visibility": 10000,
+  "wind": {
+    "speed": 0.86,
+    "deg": 280,
+    "gust": 1.48
+  },
+  "rain": {
+    "1h": 1.54
+  },
+  "clouds": {
+    "all": 100
+  },
+  "dt": 1639744568,
+  "sys": {
+    "country": "ID",
+    "sunrise": 1639692956,
+    "sunset": 1639738171
+  },
+  "timezone": 25200,
+  "id": 1625812,
+  "name": "Surakarta",
+  "cod": 200
+}
