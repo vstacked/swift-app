@@ -1,8 +1,8 @@
 //
-//  ContentView.swift
+//  URLImage.swift
 //  courses_app
 //
-//  Created by vstacked on 17/12/21.
+//  Created by vstacked on 18/12/21.
 //
 
 import SwiftUI
@@ -44,32 +44,5 @@ struct URLImage: View{
             self.data = data
         }
         task.resume()
-    }
-}
-
-struct ContentView: View {
-    @StateObject var viewModel = ViewModel()
-    var body: some View {
-        NavigationView{
-            List{
-                ForEach(viewModel.courses, id: \.self){ course in
-                    HStack{
-                        URLImage(urlString: course.image)
-                        
-                        Text(course.name).bold()
-                    }
-                    .padding(3)
-                }
-            }
-            .navigationTitle("Courses")
-            .onAppear{ viewModel.fetch()}
-        }
-        
-    }
-}
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
     }
 }

@@ -69,10 +69,10 @@
 		4EAA31B3276C77C000F8E1F3 /* weather_app */ = {
 			isa = PBXGroup;
 			children = (
+				4EAA31B4276C77C000F8E1F3 /* weather_appApp.swift */,
 				4ED72AF3276CB6F500891BDE /* Components */,
 				4ED72AE2276C889100891BDE /* Views */,
 				4ED72ADF276C860F00891BDE /* Managers */,
-				4EAA31B4276C77C000F8E1F3 /* weather_appApp.swift */,
 				4EAA31B8276C77C100F8E1F3 /* Assets.xcassets */,
 				4EAA31BA276C77C100F8E1F3 /* Preview Content */,
 				4ED72AF1276CB01700891BDE /* Extensions.swift */,

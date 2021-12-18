@@ -6,14 +6,8 @@
 //
 
 import Foundation
-import SwiftUI
 
-struct Course: Hashable, Codable{
-    let name: String
-    let image: String
-}
-
-class ViewModel: ObservableObject{
+class ContenViewModel: ObservableObject{
     @Published var courses: [Course] = []
     func fetch(){
         guard let url = URL(string: "https://iosacademy.io/api/v1/courses/index.php") else{

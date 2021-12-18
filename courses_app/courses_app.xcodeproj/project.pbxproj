@@ -7,20 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E7FC535276E0371009E1C13 /* CourseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7FC534276E0371009E1C13 /* CourseData.swift */; };
+		4E7FC538276E040B009E1C13 /* URLImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7FC537276E040B009E1C13 /* URLImage.swift */; };
 		4ED72B1D276CC3A700891BDE /* courses_appApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED72B1C276CC3A700891BDE /* courses_appApp.swift */; };
 		4ED72B1F276CC3A700891BDE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED72B1E276CC3A700891BDE /* ContentView.swift */; };
 		4ED72B21276CC3AD00891BDE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4ED72B20276CC3AD00891BDE /* Assets.xcassets */; };
 		4ED72B24276CC3AD00891BDE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4ED72B23276CC3AD00891BDE /* Preview Assets.xcassets */; };
-		4EE0E602276DC13D00C462F4 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE0E601276DC13D00C462F4 /* ViewModel.swift */; };
+		4EE0E602276DC13D00C462F4 /* ContenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE0E601276DC13D00C462F4 /* ContenViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4E7FC534276E0371009E1C13 /* CourseData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseData.swift; sourceTree = "<group>"; };
+		4E7FC537276E040B009E1C13 /* URLImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLImage.swift; sourceTree = "<group>"; };
 		4ED72B19276CC3A700891BDE /* courses_app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = courses_app.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4ED72B1C276CC3A700891BDE /* courses_appApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = courses_appApp.swift; sourceTree = "<group>"; };
 		4ED72B1E276CC3A700891BDE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4ED72B20276CC3AD00891BDE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4ED72B23276CC3AD00891BDE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		4EE0E601276DC13D00C462F4 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		4EE0E601276DC13D00C462F4 /* ContenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContenViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,6 +38,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4E7FC531276E034A009E1C13 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4E7FC534276E0371009E1C13 /* CourseData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4E7FC532276E0350009E1C13 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4E7FC533276E0355009E1C13 /* ContentView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4E7FC533276E0355009E1C13 /* ContentView */ = {
+			isa = PBXGroup;
+			children = (
+				4EE0E601276DC13D00C462F4 /* ContenViewModel.swift */,
+				4ED72B1E276CC3A700891BDE /* ContentView.swift */,
+			);
+			path = ContentView;
+			sourceTree = "<group>";
+		};
+		4E7FC536276E03D2009E1C13 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				4E7FC537276E040B009E1C13 /* URLImage.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		4ED72B10276CC3A600891BDE = {
 			isa = PBXGroup;
 			children = (
@@ -54,10 +91,11 @@
 			isa = PBXGroup;
 			children = (
 				4ED72B1C276CC3A700891BDE /* courses_appApp.swift */,
-				4ED72B1E276CC3A700891BDE /* ContentView.swift */,
+				4E7FC532276E0350009E1C13 /* Views */,
+				4E7FC536276E03D2009E1C13 /* Components */,
+				4E7FC531276E034A009E1C13 /* Model */,
 				4ED72B20276CC3AD00891BDE /* Assets.xcassets */,
 				4ED72B22276CC3AD00891BDE /* Preview Content */,
-				4EE0E601276DC13D00C462F4 /* ViewModel.swift */,
 			);
 			path = courses_app;
 			sourceTree = "<group>";
@@ -141,7 +179,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4ED72B1F276CC3A700891BDE /* ContentView.swift in Sources */,
-				4EE0E602276DC13D00C462F4 /* ViewModel.swift in Sources */,
+				4EE0E602276DC13D00C462F4 /* ContenViewModel.swift in Sources */,
+				4E7FC535276E0371009E1C13 /* CourseData.swift in Sources */,
+				4E7FC538276E040B009E1C13 /* URLImage.swift in Sources */,
 				4ED72B1D276CC3A700891BDE /* courses_appApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
